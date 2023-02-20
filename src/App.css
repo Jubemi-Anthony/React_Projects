@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.Button{
+    border: 2px solid rgb(29, 4, 88);
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.Sidebar img{
+    margin-top: 20%;
+    margin-left: 4%;
+    width: 40px;
+    height: 40px;
+}
+.invert,
+.Product .Header .spread .circular img,
+.Cart .Header .spread .circular img,
+.Sidebar img{
+    filter: invert(1);
+}
+/*STYLING THE LOGO*/
+.Logo h1{
+    font-size: 4rem;
+    color: rgb(53, 11, 151);
+    font-family: 'Rubik', sans-serif;
+}
+/*STYLING THE HEADER*/
+.Header{
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.Header .spread{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+}
+.Header .spread .circular{
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header .spread img{
+    width: 35px;
+    height: 35px;
+}
+.Header .search{
+    background-color: rgb(233, 230, 230);
+    width: 100%;
+    margin: auto;
+    padding: 0px 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.Header h3{
+    color: rgb(53, 11, 151);
+}
+.Header .search img{
+    width: 35px;
+    height: 35px;
+}
+.Header .search input{
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+/*STYLING THE FOOTER*/
+.Footer{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.Footer img{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+.Footer .length{
+    margin-left: 6px;
+}
+.Footer #circle{
+    border-radius: 100%;
+    color: white;
+    background-color: black;
+    padding: 2px;
+    font-size: 0.7rem;
+}
+/* STYLING FOR THE OLDUSER PAGE */
+.OldUser, .Sign{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: url(https://images.pexels.com/photos/8450532/pexels-photo-8450532.jpeg?auto=compress&cs=tinysrgb&w=400);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 15%;
+}
+.OldUser .top{
+    font-family: 'Rubik', sans-serif;
+    width: 50%;
+}
+.OldUser .top h2, .OldUser .top p{
+    width: 80%;
+    color: rgb(29, 4, 88);
+}
+.OldUser .top h2{
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.OldRelative, .relative{
+    position: relative;
+}
+.OldRelative .down{
+    position: absolute;
+    bottom: 25%;
+    left: 40%;
+    color: rgb(29, 4, 88);
+    text-align: center;
+}
+.OldRelative .down p:first-child, .OldRelative .down p:last-child{
+    border: 2px solid rgb(29, 4, 88);
+    border-radius: 5px;
+    width: 80px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.OldRelative .down p:nth-child(2){
+    margin: 15px 0;
+}
+/* STYLING FOR THE OLDUSER PAGE */
+.Sign{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/8450532/pexels-photo-8450532.jpeg?auto=compress&cs=tinysrgb&w=400);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.SignAlign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignAlign .Logo{
+    margin-bottom: 30px;
+}
+.Sign .form{
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 20px;
+    padding: 60px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignButton{
+    width: 80%;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px 0;
+}
+.SignButton p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.Sign .form .SignButton:first-child{
+    background-color: white;
+    margin-bottom: 30px;
+}
+.Sign .form .SignButton:nth-child(2){
+    background-color: rgb(53, 11, 151);
+    color: white;
+    margin-bottom: 40px;
+}
+.SignButton img{
+    width: 30px;
+    height: 30px;
+}
+.Sign .form .talk{
+    text-align: center;
+}
+.Sign .form .talk p:first-child{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+.Sign .form .talk p:last-child{
+    margin-bottom: 20px;
+}
+.Sign .form .talk p span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.relative .SignAlign .buttonDiv{
+    position: absolute;
+    bottom: 18%;
+}
+.relative .SignAlign .Button{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    border-color: white;
+}
+/* STYLING FOR REGISTER */
+.Register{
+    padding-top: 30px;
+    background-color: rgb(240, 237, 237);
+    height: 100vh;
+    overflow: hidden;
+}
+.Register .Logo{
+    margin-bottom: 30px;
+}
+.Register .form, .Footer .pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Register .form input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 0;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.616);
+    
+}
+.Register .form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Register .form div input{
+    width: 47%;
+}
+.Register .form button{
+    margin-top: 15%;
+    padding: 20px 25px;
+    background-color: rgb(53, 11, 151);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+}
+/* STYLING FOR SHOP */
+.Shop{
+    background-color: rgb(29, 4, 88);
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 24%;
+}
+.Shop .Header h3{
+    color: white;
+}
+.Shop .Header .search{
+    display: none;
+}
+.Shop .Footer{
+    background-color: rgba(255, 255, 255, 0.651);
+}
+.carton{
+    width: 90%;
+    margin: auto;
+}
+.Shop .top .CardDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Shop .middle{
+    display: flex;
+    justify-content: space-between;
+    margin: 15% 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.Shop .CardDisplay img{
+    border-radius: 20px;
+}
+.Shop .top .CardDisplay img{
+    width: 40%;
+    height: 120px;
+}
+.Shop .top .CardDisplay .writeUp{
+    width: 58%;
+    font-size: 0.9rem;
+}
+.Shop .middle .CardDisplay{
+    width: 100%;
+}
+.Shop .middle .CardDisplay img{
+    width: 90%;
+    height: 170px;
+}
+.Shop .middle .CardDisplay .writeUp{
+    width: 90%;
+    margin: auto;
+}
+.Shop .down .CardDisplay img{
+    width: 100%;
+}
+.Shop .Footer .page:first-child{
+    color: black;
+}
+.Shop .Footer .page:first-child img{
+    filter: none;
+}
+/*STYLING FOR PRODUCT PAGE*/
+.Product{
+    padding-top: 10%;
+    padding-bottom: 13%;
+}
+.Product .Header .invert{
+    filter: none;
+}
+.Product .Header .spread .circular, .Cart .Header .spread .circular{
+    background-color: rgb(53, 11, 151);
+}
+.Product .Footer{
+    background-color: rgb(170, 169, 169);
+    color: white;
+}
+.Product .Footer .page:nth-child(2){
+    color: black;
+}
+.Product .Footer .page:nth-child(2) img{
+    filter: none;
+}
+.Product .products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.Product .CardDisplay2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    gap: 20px;
+    position: relative;
+    padding-top: 20px;
+}
+.Product .CardDisplay2 .star{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    width: 25px;
+    height: 25px;
+}
+.Product .CardDisplay2 .itemImage{
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+}
+.Product .CardDisplay2 h2{
+    font-size: 1rem;
+    color: rgb(53, 11, 151);
+}
+.Product .CardDisplay2 button{
+    width: 80%;
+    padding: 3px;
+    background-color: rgb(29, 4, 88);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.Cart, .Starred{
+    padding-top: 10%;
+    padding-bottom: 25%;
+    background-color: rgb(201, 184, 240);
+    /* background-color: white; */
+    min-height: 100vh;
+}
+.Cart .Footer, .Starred .Footer{
+    background-color: rgb(170, 169, 169);
+}
+.Cart .Header img, .Starred .Header img{
+    filter: none;
+}
+.Cart .empty-cart, .Starred .empty-cart{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 20px;
+}
+.Cart .empty-cart img, .Starred .empty-cart img{
+    width: 50%;
+    height: 20%;
+}
+.Cart .clear-cart{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.Cart .clear-cart button{
+    border: none;
+    text-decoration: underline;
+    color: rgb(167, 20, 20);
+    background: none;
+    font-weight: bold;
+}
+.Cart .cart-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+    width: 100%;
+}
+.Cart .cart-item .image-holder{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Cart .cart-item .cart-name{
+    width: 30%;
+}
+.Cart .cart-item .cart-name p:first-child{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.Cart .cart-item .cart-name p:last-child{
+    color: rgb(94, 93, 93);
+}
+.Cart .cart-item .cart-functions{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Cart .cart-item .cart-functions button{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.Cart .cart-item .cart-functions button:first-child{
+    background-color: green;
+}
+.Cart .cart-item .cart-functions button:last-child{
+    background-color: red;
+}
+.Cart .cart-item .cart-price{
+    width: 20%;
+    text-align: right;
+}
+.Cart .totalA{
+    border-top: 1px solid rgb(73, 2, 238);
+    margin-top: 10px;
+}
+.Cart .total{
+    margin-top: 5px;
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 70%;
+}
+.Cart .total .up{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+}
+.Cart .total .up p:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Cart .total .up p:first-child span:first-child{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.Cart .total .up p:first-child span:last-child{
+    color: rgb(94, 93, 93);
+}
+.Cart .total .up p:last-child{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.Cart .total button{
+    background-color: rgb(104, 125, 241);
+    font-weight: bold;
+    padding: 5px 0px;
+    border-radius: 10px;
+    border: none;
+}
+.Starred .star-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Starred .star-item .image-holder{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Starred .star-item .saved-details{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: bold;
+}
+.Starred .star-item .saved-details .price{
+    color: rgb(94, 93, 93);
+    font-size: 0.9rem;
+}
+.Starred .star-item .saved-details .name{
+    font-size: 1.2rem;
+}
+.Starred .star-item img, .Cart .cart-item .image-holder img{
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.empty-cart .Button{
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(29, 4, 88);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    padding: 8px 12px;
+}
+.Sidebar{
+    position: absolute;
+    background-color: rgb(29, 4, 88);
+    height: 100%;
+    width: 80%;
+    z-index: 9;
+    transition: 0.3s;
+}
+#left{
+    transform: translateX(-200%);
+}
