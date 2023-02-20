@@ -1,0 +1,121 @@
+.cart-items{
+    margin: 30px auto;
+    width: 50%;
+    background-color: rgb(0, 255, 106);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.cart-items .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 255, 106);
+    border-bottom: 2px solid black;
+}
+.cart-items .empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cart-items img{
+    width: 100px;
+    height: 80px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+.cart-items-list{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5%;
+}
+.name, .functions{
+    width: 25%;
+}
+.add, .remove{
+    width: 30px;
+    margin-right: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.add{
+    background-color: green;
+}
+.remove{
+    background-color: red;
+}
+.total{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 22%;
+    font-size: 20px;
+    font-weight: 700;
+    border-top: 2px solid black;
+}
+.total p:last-child{
+    display: flex;
+    padding-left: 45%;
+}
+.clear-cart{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.clear-cart button{
+    border: none;
+    border-radius: 5px;
+    background-color: #bd0e0e;
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    .cart-items{
+        margin: 10px auto;
+        width: 95%;
+    }
+    .cart-items .header{
+        width: 100%;
+        height: 20px;
+    }
+    .functions{
+        width: 100%;
+        display: flex;
+        gap: 10%;
+        margin: 5px 0;
+    }
+    .cart-items-list{
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+        margin-left: 3%;
+    }
+    .name{
+        width: 100%;
+    }
+    .total p:last-child{
+        padding-left: 5%;
+    }
+    .clear-cart{
+        margin: 15px;
+    }
+}
