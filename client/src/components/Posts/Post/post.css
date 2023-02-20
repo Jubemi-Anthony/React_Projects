@@ -1,0 +1,75 @@
+.card{
+  height: 220px;
+  width: 220px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+.media{
+  height: 50%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card .overlay{
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  color: white;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.card .overlay2{
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+.card .overlay p{
+  font-size: 0.6rem;
+}
+.details{
+  text-align: left;
+  color: rgb(128, 125, 125);
+  font-size: 0.7rem;
+  font-weight: normal;
+  margin: 3px;
+}
+.actions{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding: 0px 10px;
+}
+.actions button{
+  font-size: 0.5rem;
+  text-align: left;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+
+}
+.icon{
+  width: 12px;
+  height: 12px;
+}
+.overlay2 button{
+  background: none;
+  border: none;
+}
+.icon-1{
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+.message{
+  font-weight: normal;
+  text-align: left;
+  color: rgb(110, 108, 108);
+  font-size: 0.6rem;
+  margin-left: 5px;
+}
